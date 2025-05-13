@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Add AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>Aman | Developer</title>
+  <meta name="keywords" content="Aman, developer, software engineer" />
+  <meta name="description" content="Aman | Developer" />
+  <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+  <meta name="theme-color" content="#36d1dc" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Added Responsive Styles -->
+  <style>
+    /* Animations */
+    .skill-card,
+    .project-wrapper__image,
+    .cta-btn {
+      transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-btn--hero:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.3;
+      }
+
+      .about-wrapper {
+        flex-direction: column;
+      }
+
+      .about-wrapper__image {
+        margin-bottom: 2rem;
+        max-width: 80%;
+      }
+
+      .row {
+        flex-direction: column;
+      }
+
+      .skills-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .skills-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero Section with Animations -->
+  <div id="hero">
+    <section class="container">
+      <h1 class="hero-title" data-aos="fade-down" data-aos-delay="200">
+        Hi, my name is <span class="text-color-main name">Aman Bhagat</span>
+        <br />
+        I'm a Software Developer.
+      </h1>
+      <p class="hero-cta" data-aos="zoom-in" data-aos-delay="400">
+        <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+      </p>
+    </section>
+  </div>
+
+  <!-- About Section with Animations -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="row about-wrapper">
+        <!-- Profile Image -->
+        <div class="about-wrapper__image" data-aos="fade-right">
+          <img class="img" src="./assets/selfImg.JPG" alt="Sanket's Profile Image" width="450" height="350"
+            loading="lazy" />
+        </div>
+
+        <!-- About Information -->
+        <div class="about-wrapper__info" data-aos="fade-left" data-aos-delay="200">
+          <p class="about-wrapper__info-text">
+            Hi, I'm Aman — an Electronics and Communication Engineering undergraduate at IIIT Bhagalpur with a strong
+            passion for problem-solving and software development. I've solved over 500 problems on LeetCode and more
+            than 1000 problems across various platforms, consistently honing my skills in data structures, algorithms,
+            and competitive programming. I enjoy building efficient, scalable solutions that tackle real-world
+            challenges.
+          </p>
+          <p class="about-wrapper__info-text">
+            I am Frontend/Backend web developer,problem-solving, and software engineering. I enjoy building scalable and
+            efficient solutions that solve real-world problems.
+          </p>
+
+
+          <!-- Resume Link -->
+          <span class="about-wrapper__cta">
+            <a href="https://drive.google.com/file/d/14eHXRWQJa3lGxGJpjmkhjr1C2gCuToel/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer" class="cta-btn cta-btn--resume" data-aos="zoom-in" data-aos-delay="400">
+              View Resume
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section with Animations -->
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Skills</h2>
+      <div class="skills-wrapper">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+          <i class="devicon-cplusplus-plain colored"></i>
+          <p>C++</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+          <i class="devicon-c-plain colored"></i>
+          <p>C</p>
+        </div>
+
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+          <i class="devicon-javascript-plain colored"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="devicon-typescript-plain colored"></i>
+          <p>TypeScript</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+          <i class="devicon-html5-plain colored"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+          <i class="devicon-css3-plain colored"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="devicon-tailwindcss-plain colored"></i>
+          <p>TailwindCSS</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+          <i class="devicon-react-original colored"></i>
+          <p>ReactJS</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="devicon-nextjs-plain colored"></i>
+          <p>NextJS</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+          <i class="devicon-nodejs-plain colored"></i>
+          <p>Node.js</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+          <i class="devicon-express-original colored"></i>
+          <p>Express.js</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+          <i class="devicon-python-plain colored"></i>
+          <p>Python</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="550">
+          <i class="devicon-mongodb-plain colored"></i>
+          <p>MongoDB</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="devicon-firebase-plain colored"></i>
+          <p>Firebase</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="devicon-mysql-plain-wordmark"></i>
+          <p>MySQL</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="devicon-postman-plain colored"></i>
+          <p>Postman</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="650">
+          <i class="devicon-git-plain colored"></i>
+          <p>Git</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="devicon-redux-plain colored"></i>
+          <p>Redux</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="devicon-vscode-plain colored"></i>
+          <p>VSCode</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <i class="devicon-github-plain colored"></i>
+          <p>Github</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- End Skills Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text" data-aos="fade-up">Projects</h2>
+
+        <!-- Real Time Chat App -->
+        <article class="row" data-aos="fade-up">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Distributing Downloading System</h3>
+            <p class="project-wrapper__text-info">
+              The Distributed Downloading System , also known as SmartDownloader, is a multi-device downloader designed
+              to enhance file download efficiency.It operates by downloading portions of a file using HTTP Range
+              headers, as per user specifications. The system later merges these downloaded parts using Blob,
+              reconstructing the original file.This approach aims to reduce download time and minimize the likelihood of
+              errors during the download process.. Built with HTML,CSS,ReactJS, Api,Firebase it ensures real-time
+              downloaded handling and responsive UI design. 🚀
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://smart-downloader.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="cta-btn cta-btn--hero cta-btn--projects">See Live</a>
+              <a href="https://github.com/AmanAB-9162/Distributng-downloading-system" target="_blank"
+                class="cta-btn text-color-main">Source Code</a>
+            </div>
+          </div>
+          <div class="project-wrapper__image" data-aos="zoom-in">
+            <a href="https://smart-downloader.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/smartdownloader.png" class="img-fluid" alt="Chat App Preview" loading="lazy">
+              </div>
+            </a>
+          </div>
+        </article>
+
+        <!-- Gaming Hub -->
+        <article class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Smart Finder</h3>
+            <p class="project-wrapper__text-info">
+              The document finder is a tool that searches for a given keyword in the content of files within a specified
+              directory and its subdirectories. It employs the Knuth–Morris–Pratt string matching algorithm for
+              efficient keyword matching. Additionally, it utilizes Tesseract for optical text recognition and a
+              document parser for handling various document types The tool optimizes execution speed by employing
+              multiple worker threads, ensuring asynchronous, controlled, and rapid processing of files.. Built using
+              HTML, CSS, and JavaScript ,ReactJS, Api,Firebase the platform ensures smooth performance across devices.
+              This project highlights skills in development, event handling, and UI/UX design. 🚀
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://smart-document-locator.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="cta-btn cta-btn--hero cta-btn--projects">See Live</a>
+              <a href="https://github.com/AmanAB-9162/Smart-Finder" target="_blank"
+                class="cta-btn text-color-main">Source Code</a>
+            </div>
+          </div>
+          <div class="project-wrapper__image" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://smart-document-locator.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/smartfinder.png" class="img-fluid" alt="Gaming Hub Preview" loading="lazy">
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- Meme-Generator -->
+        <article class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Martial Art Simulator</h3>
+            <p class="project-wrapper__text-info">
+              A browser-based simulation game built using HTML, CSS, and JavaScript. It allows users to interact with
+              various martial arts techniques through animations and controls, providing a fun and educational
+              experience. Designed with responsive UI and dynamic interactions to enhance user engagement.. Built with
+              HTML,CSS and JavaScript, it ensures a smooth and interactive experience. 🎮 </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://celebrated-duckanoo-35629e.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="cta-btn cta-btn--hero cta-btn--projects">See Live</a>
+              <a href="https://github.com/AmanAB-9162/Martial-Arts-Simulator" target="_blank"
+                class="cta-btn text-color-main">Source Code</a>
+            </div>
+          </div>
+          <div class="project-wrapper__image" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://celebrated-duckanoo-35629e.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/martialart.png" class="img-fluid" alt="Gaming Hub Preview" loading="lazy">
+              </div>
+            </a>
+          </div>
+        </article>
+        <div class="container">
+          <div class="more-projects-content" data-aos="fade-up">
+            <h2 class="section-title">Want to See More Projects?</h2>
+            <p class="more-projects-subtitle">
+              Explore all my repositories on GitHub to see more of my work!
+            </p>
+            <a href="https://github.com/AmanAB-9162?tab=repositories" target="_blank" rel="noopener noreferrer"
+              class="cta-btn cta-btn--github">
+              <i class="fab fa-github"></i> See All Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- End Projects Section -->
+
+
+  <!-- Contact Section -->
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+      <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Feel free to reach out for collaborations, opportunities, or just a friendly hello!
+      </p>
+
+      <div class="contact-cards" data-aos="fade-up" data-aos-delay="200">
+        <!-- Email Card -->
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>amanbhagat.191@gmail.com</p>
+          <a href="mailto:amanbhagat.191@gmail.com" class="cta-btn cta-btn--contact">Send Email</a>
+        </div>
+
+        <!-- GitHub Card -->
+        <div class="contact-card">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <p>Check out my projects</p>
+          <a href="https://github.com/AmanAB-9162" target="_blank" class="cta-btn cta-btn--contact">Visit GitHub</a>
+        </div>
+
+        <!-- LinkedIn Card -->
+        <div class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <p>Let's connect professionally</p>
+          <a href="https://www.linkedin.com/in/aman-bhagat-350a19256/" target="_blank"
+            class="cta-btn cta-btn--contact">Visit LinkedIn</a>
+        </div>
+
+        <!-- Phone Card -->
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <p>+91 9162182297</p>
+          <a href="tel:+919162182297" class="cta-btn cta-btn--contact">Call Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS Animation Initialization -->
+  <!-- AOS Initialization -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: false,  // Allow animations to restart
+      offset: 120,
+      easing: 'ease',
+      mirror: false  // Allow re-animating when scrolling back up
+    });
+  </script>
+
+  <!-- Existing scripts -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear()
+  </script>
+  <script src="./javascript/vanilla-tilt.min.js"></script>
+  <script type="text/javascript" src="./javascript/valtilt.js"></script>
+</body>
+
+</html>
