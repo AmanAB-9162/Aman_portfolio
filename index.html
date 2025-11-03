@@ -81,6 +81,7 @@
 
 <body>
   <!-- Hero Section with Animations -->
+
   <div id="hero">
     <section class="container">
       <h1 class="hero-title" data-aos="fade-down" data-aos-delay="200">
@@ -101,28 +102,33 @@
       <div class="row about-wrapper">
         <!-- Profile Image -->
         <div class="about-wrapper__image" data-aos="fade-right">
-          <img class="img" src="./assets/selfImg.JPG" alt="Sanket's Profile Image" width="450" height="350"
+          <img class="img" src="./assets/profile_pic_Aman.jpg" alt="Sanket's Profile Image" width="450" height="350"
             loading="lazy" />
         </div>
 
         <!-- About Information -->
         <div class="about-wrapper__info" data-aos="fade-left" data-aos-delay="200">
           <p class="about-wrapper__info-text">
-            Hi, I'm Aman — an Electronics and Communication Engineering undergraduate at IIIT Bhagalpur with a strong
-            passion for problem-solving and software development. I've solved over 500 problems on LeetCode and more
-            than 1000 problems across various platforms, consistently honing my skills in data structures, algorithms,
-            and competitive programming. I enjoy building efficient, scalable solutions that tackle real-world
-            challenges.
+            Full-Stack Developer | Problem Solver | Tech Enthusiast
           </p>
           <p class="about-wrapper__info-text">
+
+            I’m Aman Bhagat, an undergraduate at IIIT Bhagalpur and a passionate Full-Stack Developer with hands-on
+            experience at Tech Octanet. I specialize in building scalable, high-performance web applications using
+            React.js, Node.js, Firebase, and MongoDB. With a strong foundation in Data Structures, Algorithms, and
+            System Design, I’ve solved 800+ coding problems across LeetCode, GFG, and CodeChef. I enjoy creating
+            reliable, cloud-based systems, contributing to open source, and continuously exploring new technologies to
+            build impactful, real-world solutions.
+          </p>
+          <!-- <p class="about-wrapper__info-text">
             I am Frontend/Backend web developer,problem-solving, and software engineering. I enjoy building scalable and
             efficient solutions that solve real-world problems.
-          </p>
+          </p> -->
 
 
           <!-- Resume Link -->
           <span class="about-wrapper__cta">
-            <a href="https://drive.google.com/file/d/14eHXRWQJa3lGxGJpjmkhjr1C2gCuToel/view?usp=sharing" target="_blank"
+            <a href="https://drive.google.com/file/d/129PrMupuBzoDoAwTkQfNTHEtrcUISilI/view?usp=sharing" target="_blank"
               rel="noopener noreferrer" class="cta-btn cta-btn--resume" data-aos="zoom-in" data-aos-delay="400">
               View Resume
             </a>
@@ -239,17 +245,40 @@
       <div class="project-wrapper">
         <h2 class="section-title dark-blue-text" data-aos="fade-up">Projects</h2>
 
-        <!-- Real Time Chat App -->
+        <article class="row" data-aos="fade-up">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Health-Node</h3>
+            <p class="project-wrapper__text-info">
+              Health Node is a cloud-native healthcare platform that enables real-time appointment booking, secure
+              doctor–patient communication, and seamless online payments using Razorpay integration. Built with React,
+              Node.js, MongoDB, and WebSockets, it focuses on reliability, scalability, and smooth user experience for
+              both patients and healthcare professionals.
+
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://health-node.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="cta-btn cta-btn--hero cta-btn--projects">See Live</a>
+              <a href="https://github.com/AmanAB-9162/Health-Node" target="_blank"
+                class="cta-btn text-color-main">Source Code</a>
+            </div>
+          </div>
+          <div class="project-wrapper__image" data-aos="zoom-in">
+            <a href="https://health-node.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/healthnode.png" class="img-fluid" alt="Chat App Preview" loading="lazy">
+              </div>
+            </a>
+          </div>
+        </article>
+
+
         <article class="row" data-aos="fade-up">
           <div class="project-wrapper__text">
             <h3 class="project-wrapper__text-title">Distributing Downloading System</h3>
             <p class="project-wrapper__text-info">
-              The Distributed Downloading System , also known as SmartDownloader, is a multi-device downloader designed
-              to enhance file download efficiency.It operates by downloading portions of a file using HTTP Range
-              headers, as per user specifications. The system later merges these downloaded parts using Blob,
-              reconstructing the original file.This approach aims to reduce download time and minimize the likelihood of
-              errors during the download process.. Built with HTML,CSS,ReactJS, Api,Firebase it ensures real-time
-              downloaded handling and responsive UI design. 🚀
+              SmartDownloader is a distributed downloading tool that splits files into chunks using HTTP Range headers
+              and reconstructs them via Blobs. Built with React, Firebase, and APIs, it ensures fast, reliable downloads
+              with a responsive UI.🚀
             </p>
             <div class="project-wrapper__text-btns">
               <a href="https://smart-downloader.vercel.app/" target="_blank" rel="noopener noreferrer"
@@ -267,18 +296,15 @@
           </div>
         </article>
 
-        <!-- Gaming Hub -->
+
+
         <article class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="project-wrapper__text">
             <h3 class="project-wrapper__text-title">Smart Finder</h3>
             <p class="project-wrapper__text-info">
-              The document finder is a tool that searches for a given keyword in the content of files within a specified
-              directory and its subdirectories. It employs the Knuth–Morris–Pratt string matching algorithm for
-              efficient keyword matching. Additionally, it utilizes Tesseract for optical text recognition and a
-              document parser for handling various document types The tool optimizes execution speed by employing
-              multiple worker threads, ensuring asynchronous, controlled, and rapid processing of files.. Built using
-              HTML, CSS, and JavaScript ,ReactJS, Api,Firebase the platform ensures smooth performance across devices.
-              This project highlights skills in development, event handling, and UI/UX design. 🚀
+              Smart Finder is a fast document search tool using the KMP algorithm and Tesseract OCR to extract and match
+              keywords across various file types. Built with React, Firebase, and multithreading, it delivers efficient
+              full-stack search with strong UI/UX design.
             </p>
             <div class="project-wrapper__text-btns">
               <a href="https://smart-document-locator.vercel.app/" target="_blank" rel="noopener noreferrer"
@@ -295,15 +321,38 @@
             </a>
           </div>
         </article>
-        <!-- Meme-Generator -->
+
+        <article class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Constitution-Adventures</h3>
+            <p class="project-wrapper__text-info">
+              Constitutional Adventures is an interactive, gamified platform that makes learning the Indian Constitution
+              fun and engaging through AI-powered games and quizzes. Built with React, Next.js, and Tailwind CSS, it
+              helps users explore governance, rights, and duties while playing games like Ludo, Car Race, Cricket and
+              many more— blending education with entertainment seamlessly. </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://constitution-adventures-sih-oplp.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="cta-btn cta-btn--hero cta-btn--projects">See Live</a>
+              <a href="https://github.com/AmanAB-9162/Constitution-Adventures-SIH" target="_blank"
+                class="cta-btn text-color-main">Source Code</a>
+            </div>
+          </div>
+          <div class="project-wrapper__image" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://constitution-adventures-sih-oplp.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/constitution.png" class="img-fluid" alt="Gaming Hub Preview" loading="lazy">
+              </div>
+            </a>
+          </div>
+        </article>
+
         <article class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="project-wrapper__text">
             <h3 class="project-wrapper__text-title">Martial Art Simulator</h3>
             <p class="project-wrapper__text-info">
-              A browser-based simulation game built using HTML, CSS, and JavaScript. It allows users to interact with
-              various martial arts techniques through animations and controls, providing a fun and educational
-              experience. Designed with responsive UI and dynamic interactions to enhance user engagement.. Built with
-              HTML,CSS and JavaScript, it ensures a smooth and interactive experience. 🎮 </p>
+              Developed a browser-based martial arts simulation game using HTML, CSS, and JavaScript, featuring
+              interactive animations, responsive UI, and dynamic controls for an engaging and educational experience. 🎮
+            </p>
             <div class="project-wrapper__text-btns">
               <a href="https://celebrated-duckanoo-35629e.netlify.app/" target="_blank" rel="noopener noreferrer"
                 class="cta-btn cta-btn--hero cta-btn--projects">See Live</a>
@@ -315,6 +364,54 @@
             <a href="https://celebrated-duckanoo-35629e.netlify.app/" target="_blank" rel="noopener noreferrer">
               <div class="thumbnail rounded">
                 <img src="./assets/martialart.png" class="img-fluid" alt="Gaming Hub Preview" loading="lazy">
+              </div>
+            </a>
+          </div>
+        </article>
+
+
+        <article class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Finanace Dasboard</h3>
+            <p class="project-wrapper__text-info">
+              Built a responsive finance tracker using Next.js, TypeScript, and Tailwind CSS with features like
+              transaction logging, category insights, and sleek UI/UX. Integrated features like real-time transaction
+              logging, category-based analytics, and monthly summaries. </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://finance-dashborad.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="cta-btn cta-btn--hero cta-btn--projects">See Live</a>
+              <a href="https://github.com/AmanAB-9162/FinanceDashborad" target="_blank"
+                class="cta-btn text-color-main">Source Code</a>
+            </div>
+          </div>
+          <div class="project-wrapper__image" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://finance-dashborad.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/financeDasboard.png" class="img-fluid" alt="Gaming Hub Preview" loading="lazy">
+              </div>
+            </a>
+          </div>
+        </article>
+
+
+        <article class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Drum-Kit</h3>
+            <p class="project-wrapper__text-info">
+              Funny Drum Kit is a simple and fun web-based music app where users can play drum sounds using mouse clicks
+              or keyboard keys. Built with HTML, CSS, and JavaScript, it offers an interactive and entertaining way to
+              explore basic sound and event handling on the web. 🎮 </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://adorable-pudding-c790c5.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="cta-btn cta-btn--hero cta-btn--projects">See Live</a>
+              <a href="https://github.com/AmanAB-9162/Drum-Sound-Kit" target="_blank"
+                class="cta-btn text-color-main">Source Code</a>
+            </div>
+          </div>
+          <div class="project-wrapper__image" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://adorable-pudding-c790c5.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/drumkit.png" class="img-fluid" alt="Gaming Hub Preview" loading="lazy">
               </div>
             </a>
           </div>
@@ -335,7 +432,13 @@
     </div>
 
   </section>
-  <!-- End Projects Section -->
+
+
+
+
+  <!-- End Projects Section-->
+
+
 
 
   <!-- Contact Section -->
@@ -348,13 +451,19 @@
       </p>
 
       <div class="contact-cards" data-aos="fade-up" data-aos-delay="200">
-        <!-- Email Card -->
+        <!-- Contact Info Card -->
         <div class="contact-card">
-          <i class="fas fa-envelope"></i>
-          <h3>Email</h3>
-          <p>amanbhagat.191@gmail.com</p>
-          <a href="mailto:amanbhagat.191@gmail.com" class="cta-btn cta-btn--contact">Send Email</a>
+          <i class="fas fa-address-book"></i>
+          <h3>Contact Info</h3>
+         <p><strong>Get in touch for collaborations, projects, or just to say hello!</strong></p> 
+          <!-- <p><strong>Phone:</strong> <a href="tel:+919162182297">+91 9162182297</a></p> -->
+          <!-- <p><strong>Email:</strong> <a href="mailto:amanbhagat.191@gmail.com">amanbhagat.191@gmail.com</a></p> -->
+          <div class="contact-actions">
+            <a href="tel:+919162182297" class="cta-btn cta-btn--contact">Call Me</a>
+            <a href="mailto:amanbhagat.191@gmail.com" class="cta-btn cta-btn--contact">Send Email</a>
+          </div>
         </div>
+
 
         <!-- GitHub Card -->
         <div class="contact-card">
@@ -372,14 +481,29 @@
           <a href="https://www.linkedin.com/in/aman-bhagat-350a19256/" target="_blank"
             class="cta-btn cta-btn--contact">Visit LinkedIn</a>
         </div>
+        <!-- Coding Profiles Card -->
+        <div class="contact-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Coding Profiles</h3>
+          <p>Explore my problem-solving journey across platforms</p>
+          <div class="coding-links">
+            <a href="https://leetcode.com/A_9162_B/" target="_blank" class="cta-btn cta-btn--contact">LeetCode</a>
+            <a href="https://www.codechef.com/users/amanab" target="_blank"
+              class="cta-btn cta-btn--contact">CodeChef</a>
+            <a href="https://www.geeksforgeeks.org/user/amanbhajzlh/" target="_blank"
+              class="cta-btn cta-btn--contact">GFG</a>
+          </div>
+        </div>
+
+
 
         <!-- Phone Card -->
-        <div class="contact-card">
+        <!-- <div class="contact-card">
           <i class="fas fa-phone"></i>
           <h3>Phone</h3>
           <p>+91 9162182297</p>
           <a href="tel:+919162182297" class="cta-btn cta-btn--contact">Call Me</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -399,6 +523,7 @@
 
   <!-- Existing scripts -->
   <script>
+
     document.getElementById("year").textContent = new Date().getFullYear()
   </script>
   <script src="./javascript/vanilla-tilt.min.js"></script>
